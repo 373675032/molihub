@@ -1,0 +1,186 @@
+body{
+    background-image: url("../images/publish_bj.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+.nav-div{
+    width: 98%;
+    margin: 20px auto 5px;
+    background: #2b6695;
+    height: 60px;
+    color: white;
+}
+.nav-div ul li{
+    list-style: none;
+    float: left;
+    font-size: 18px;
+    margin: 0px 10px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+.nav-div ul li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-div ul li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.nav-div ul li span{
+    color: #ff9854;
+    font-size: 14px;
+}
+.main{
+    padding-top: 10px;
+    width: 98%;
+    background: rgba(255,255,255,0.5);
+    margin: 10px auto;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.title-box{
+    height: 70px;
+}
+.title-box a img{
+    width: 200px;
+    float: right;
+    margin-right: 1%;
+    margin-top: 10px;
+}
+/*文章标题开始*/
+.title{
+    width: 96%;
+    margin: 20px auto 10px;
+    font-size: 18px;
+}
+.title p{
+    width: 5%;
+}
+.title input{
+    width: 100%;
+    height: 28px;
+    margin-bottom: 7px;
+}
+/*文章标题结束*/
+/*文章正文开始*/
+.content{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.content .p1,.kind p,.private p,.label p{
+    margin-top: 2px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+ }
+/*文章正文结束*/
+/*文章类别开始*/
+.kind{
+    width: 97%;
+    margin: 0 auto;
+    border-bottom: 2px solid #2c3e50;
+}
+.kind ul{
+    width: 90%;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.kind-li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.kind-li label input{
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    margin-bottom: 1px;
+    vertical-align: middle;
+}
+
+/*文章类别结束*/
+/*文章标签开始*/
+.label{
+    width: 97%;
+    margin: 0 auto;
+}
+.label ul{
+    width: 90%;
+    margin-left: 10px;
+}
+.label-li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.label-li label span{
+    margin-right: 2px;
+}
+.label-li label input{
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    margin-bottom: 1px;
+    vertical-align: middle;
+}
+.label-li label input:checked + span{
+    background: red;
+}
+.label p span{
+    font-size: 14px;
+}
+.label p,.kind p{
+    font-weight: 700;
+}
+#default-label{
+    display: none;
+}
+/*文章标签结束*/
+/*是否私密复选框开始*/
+.doSubmit span{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 5%;
+}
+#isPrivate{
+    margin-top: -2px;
+    margin-bottom: 1px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+/*是否私密复选框结束*/
+/*提交*/
+.doSubmit{
+    width: 97%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.doSubmit input{
+    border-bottom: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    width: 100px;
+    background: #2c3e50;
+    height: 40px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.doSubmit input:hover{
+    background: #95a5a6;
+}
+.xmp{
+    font-family: '微软雅黑';
+    font-size: 16px;
+    display: inline-block;
+}
+.hidden-space{
+    display: none;
+}

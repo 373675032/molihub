@@ -1,0 +1,190 @@
+* {
+    font-family: 'montserrat', sans-serif;
+}
+/*====body start====*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    background-size: 400%;
+    background-repeat: no-repeat;
+    animation: bganimation 15s infinite;
+    overflow: hidden;
+}
+/*====body end====*/
+/*====首页渐变动效 start====*/
+@keyframes bganimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+/*====首页渐变动效 end====*/
+/*====molihub start====*/
+h2{
+    font-size: 200px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 20px;
+    text-align: center;
+    background: url(../images/index_bj.jpg) 50%,50%;
+    background-size: cover;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+/*====molihub end====*/
+/*====登录和注册盒子 start====*/
+.login-box ,.register-box {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background-image: linear-gradient(
+            45deg,
+            #e84118,
+            #f1eb81
+    ); /*设置颜色渐变 方向(0deg垂直向上) 起点颜色 终点颜色*/
+    height: 100vh; /* vh 视口高度 viewport height 百分比单位*/
+    transition: 0.4s; /*过度效果  property duration timing-function delay 默认属性:all 0 ease 0*/
+}
+.login-form, .register-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*定义 2D 转换8 */
+    color: white;
+    text-align: center;
+}
+.login-form h1, .register-form h1{
+    font-weight: 400;
+    margin-top: 0;
+}
+.txtb {
+    display: block;
+    box-sizing: border-box;
+    width: 240px;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+    border-radius: 6px;
+    text-align: center;
+    ime-mode:disabled;
+    margin-top: 2px;
+}
+#loginPassword{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#RegisterEmail{
+    margin-top: 30px;
+}
+#RegisterPassword2{
+    margin-top: 30px;
+}
+#RegisterPhone{
+    margin-right: 10px;
+}
+.login-btn,.register-btn {
+    width: 240px;
+    background: #2c3e50;
+    border: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.login-btn:hover,.register-btn:hover{
+    background: #85222e;
+}
+.hide-login-btn,.hide-register-btn {
+    color: #000;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0.7;
+    transform: rotate(45deg); /*定义 2D 转换8 */
+}
+.showed {
+    left: 0;
+}
+.error{
+    border-color: red;
+}
+.errorTip::-webkit-input-placeholder {
+    color: red;
+}
+/*====登录和注册盒子 end====*/
+/*====首页按钮 start====*/
+.show-login-btn{
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.show-register-btn{
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.visitor{
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.show-login-btn:hover,.show-register-btn:hover,.visitor:hover{
+    background: #85222e;
+}
+.nav{
+    color: white;
+    text-align: center;
+    height: 100vh;
+    margin-top: -150px;
+}
+.login-img-box{
+    position: relative;
+    top: 15px;
+    right: 155px;
+}
+.login_img{
+    position: absolute;
+    width: 25px;
+}
+/*====首页按钮 end====*/
+/* tip */
+.tip-box{
+    position: relative;
+    top: -32px;
+    left: 135px;
+}
+.tip-box img{
+    width: 20px;
+}
+#userName-result-span{
+    display: none;
+}
+#email-result-span{
+    display: none;
+}
+#password-result-span{
+    display: none;
+}
+#login-error-tip{
+    display: none;
+}

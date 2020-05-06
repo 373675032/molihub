@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--========== 配置数据库相关开始 ==========-->
+    <!--配置数据源-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--配置数据库的必备信息-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/molihub?"/>
+        <property name="user" value="root"/>
+        <property name="password" value=""/>
+        <!--解决mysql的8小时自动断开连接问题-->
+<!--        <property name="preferredTestQuery" value="select id from c3p0_connection_test where id=1" />-->
+<!--        <property name="idleConnectionTestPeriod" value="60" />-->
+<!--        <property name="testConnectionOnCheckout" value="false"/>-->
+<!--        <property name="testConnectionOnCheckin" value="true"/>-->
+<!--        <property name="maxIdleTime" value="180000"/>-->
+
+    </bean>
+    <!--配置jdbc的模板-->
+    <bean id="JdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--========== 配置数据库相关结束 ==========-->
+
+
+    <!--配置要扫描的包-->
+    <context:component-scan base-package="service.impl,dao.impl,domain,controller,test"/>
+    <!--配置事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--配置通知-->
+    <!--<tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="addUser" propagation="REQUIRED" isolation="DEFAULT" rollback-for="java.lang.Throwable" read-only="false"/>
+            &lt;!&ndash; 对其他方法 使用默认的事务管理 &ndash;&gt;
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+    &lt;!&ndash;配置aop&ndash;&gt;
+    <aop:config>
+        <aop:pointcut id="pc" expression="execution(* service.*.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pc"/>
+    </aop:config>-->
+</beans>

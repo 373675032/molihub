@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*导航栏结束*/
+/*用户任务栏开始*/
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 500px;
+    margin-top: 5%;
+    right: -240px;
+    overflow: hidden;
+    transition: 0.8s all;
+    z-index: 1;
+}
+.sidebar ul{
+    border-radius: 10px;
+    background: #2c2c2c;
+    overflow: hidden;
+}
+.side{
+    right: 0;
+}
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+}
+.sidebar ul li{
+    list-style: none;
+    color: white;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+}
+.sidebar ul li input{
+    width: 80%;
+    height: 25px;
+    padding-left: 2px;
+    font-size: 18px;
+    text-align: left;
+}
+.sidebar ul li button{
+    width: 80%;
+    background: #0B173B;
+    color: white;
+    font-size: 20px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+    display: block;
+    transition: 0.6s all;
+}
+.btn{
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+}
+#list_status{
+    display: none;
+}

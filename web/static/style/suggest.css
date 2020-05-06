@@ -1,0 +1,132 @@
+
+/* 整体布局 */
+body{
+    font-family: '微软雅黑';
+}
+
+/* Hello, best */
+#suggest-form p{
+    font-size: 24px;
+}
+
+/* 排版 */
+#wrap{
+    width: 530px;
+    height: 700px;
+    margin: 20px auto 0;
+    background:transparent;
+    color:black;
+    font-family: '微软雅黑';
+}
+
+#form-wrap{
+    overflow: hidden;
+    height: 447px;
+    position: relative;
+    top: 0px;
+    transition: all 1s ease-in-out .3s;
+}
+
+/* before图片 */
+#form-wrap:before{
+    content:"";
+    position:absolute;
+    bottom: 128px;
+    left: 0px;
+    background: url(../images/before.png);
+    width:530px;
+    height: 317px;
+}
+
+#form-wrap:after{
+    content:"";
+    position:absolute;
+    bottom: 0px;
+    left: 0;
+    background: url(../images/after.png);
+    width: 530px;
+    height: 259px;
+}
+
+#form-wrap.hide:after,
+#form-wrap.hide:before{
+    display: none;
+}
+
+/* 滑动设置 */
+#form-wrap:hover{
+    height: 777px;
+    top:-200px;
+}
+
+/* 表单将letter——bg放进去 */
+#suggest-form{
+    background: white;
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    height: 200px;
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-right: 3px;
+    transition: all 1s ease-in-out .2s;
+}
+
+/* 表单滑动显示的大小  */
+#form-wrap:hover form{
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.3), 0 0 0 1px #e84118;
+}
+
+
+#suggest-form textarea{
+    font: 14px normal uppercase, arial,serif;
+    color: dimgray;
+    background: none;
+    width: 98%;
+    height: 400px;
+    margin: 0 auto;
+    text-indent: 2em;
+    border: 1px solid red;
+    border-radius:5px;
+    resize: none;
+}
+
+/* message部分变大 */
+#suggest-form textarea{
+    height:220px;
+    padding-top: 14px;
+    margin-top: 5px;
+}
+
+/*  */
+#suggest-form textarea:focus{
+    background: white;
+}
+
+/* button样式 */
+#btn{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    opacity: 1; /* 原来是0,因为无法显示改为1 */
+    background: red;
+    cursor: pointer;
+    border-radius:3px;
+    transition: opacity 0.7s ease-in-out 0s;
+}
+#btn:hover{
+    background: blue;
+}
+#form-wrap:hover btn{
+    z-index:1;
+    opacity:1;
+    transition: opacity 0.5s ease-in-out 1.3s;
+    border: 1px solid blue;
+}

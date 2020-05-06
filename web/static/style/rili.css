@@ -1,0 +1,95 @@
+
+/* 日历背景盒子 */
+.calender{
+    margin: 0 auto;
+	width: 200px;
+	text-align: center;
+}
+/*标题排版*/
+.title{
+	height: 70px;
+	position: relative;
+	text-align: center;
+}
+/* 标题样式 */
+#calendar-title{
+    font-size: 15px;
+	text-transform: uppercase;
+	font-family: arial,helvetica,sans-serif;
+	padding: 14px 0 0 0;
+}
+#calendar-year{
+	font-size: 15px;
+	font-family: arial,helvetica,sans-serif;
+	font-weight: normal;
+}
+/* 左滑按钮*/
+#prev{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(../images/k1.jpg) no-repeat 50% 50%;
+	width: 50px;
+	height: 70px;
+	z-index: 0;
+}
+/* 右滑按钮 */
+#next{
+	position: absolute;
+    top: 0px;
+	right: 0px;
+	background: url(../images/k2.jpg)  no-repeat 50% 50%;
+	width: 50px;
+	height: 70px;
+	z-index: 1;
+}
+/* 控制星期的大小 */
+.body-list ul{
+	font-size: 5px;
+	font-family: arial,helvetica,sans-serif;
+	font-weight: bold;
+	width: 100%;
+	box-sizing: border-box;
+}
+/* 将星期排成一排规范字体 */
+.body-list ul li{
+	list-style: none;
+	display: block;
+	width: 14.28%;
+	float: left;
+	/* 规定行高 垂直居中*/
+	height:15px;
+	line-height: 36px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 14px;
+}
+/* month,year字体 */
+.green{
+	color: blue;
+}
+/* 浅灰色显示过去的日期 */
+.lightgrey{
+	color: #565656;
+}
+/* 深灰色显示将来的日期 */
+.darkgrey{
+	color: #fff;
+}
+/* 日期当天用绿色背景绿色文字显示 */
+.greenbox{
+    color: blue;
+}
+
+/*整体框架栏*/
+/* .box{
+
+    width: 230px;
+    height: 500px;
+    float: left;
+    background: yellow;
+    margin-left: 100px;
+    margin-top: 30px;
+	text-align: center;
+
+} */

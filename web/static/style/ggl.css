@@ -1,0 +1,99 @@
+.notice-all{
+  width:180px;
+  height:200px;
+  position:relative;
+}
+.notice-screen{
+	width:180px;
+	height:200px;
+	overflow:hidden;
+	position:relative;
+}
+.notice-screen li{ 
+	width: 180px; 
+	height:200px; 
+	overflow:hidden;
+	float:left;
+	word-wrap: break-word;
+}
+.notice-screen ul{
+	position:absolute;
+    left:0;
+    top:0px;
+    width:3000px;
+}
+#notice-ul li{
+    list-style:none;
+ 	text-indent: 2em;
+ 	height: 150px;
+ 	overflow-y: auto; 
+    color: black;
+    font-size: 12px;
+	/* text-align: center; */
+    padding-top: 10px;
+}
+.notice-all ol{
+	position:absolute;
+	right:10px; 
+	bottom:10px;
+	line-height:20px;
+	text-align:center;
+}
+.notice-all ol li{ 
+	float:left;
+    width:20px; 
+	height:20px; 
+	background:#fff;
+	border:1px solid #ccc;
+	margin-left:10px;
+	cursor:pointer;}
+.notice-all ol li.current{ 
+	background:yellow;
+}
+.notice-box{
+	width:180px;
+	height:220px;
+    padding:7px;
+    margin:5px auto;
+    position:relative;
+    border-radius:10px;
+ }
+.notice-box img{
+	width: 23px;
+	top: 12px;
+	left: 13px;
+	position: absolute;
+
+}
+.kinds img{
+	width: 25px;
+	top: 20px;
+	left: 22px;
+	position: absolute;
+}
+.baseInfo img{
+	width: 23px;
+	top: 20px;
+	left: 22px;
+	position: absolute;
+}
+.read-top img{
+	width: 23px;
+	top: 15px;
+	left: 22px;
+	position: absolute;
+}
+.like-top img{
+	width: 23px;
+	top: 15px;
+	left: 22px;
+	position: absolute;
+}
+ .notice-title{
+ 	text-align:center;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	background-color: #2b6695;
+ 	color: white;
+	border-radius: 10px;
+ }

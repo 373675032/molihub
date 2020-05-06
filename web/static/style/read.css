@@ -1,0 +1,210 @@
+body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea,select{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("../images/read_bj.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+.main-read{
+    width: 70%;
+    background: #ecf0f1;
+    margin: 0px auto 50px;
+}
+.nav-div{
+    background: #2b6695;
+    width: 70%;
+    margin: 100px auto 0px;
+    height: 60px;
+    color: white;
+}
+.nav-div ul li{
+    list-style: none;
+    float: left;
+    font-size: 18px;
+    margin: 0px 10px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+.nav-div ul li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-div ul li a:hover{
+    text-decoration: underline;
+    color: #2ecc71;
+}
+.article{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.article .title{
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    color: #2b6695;
+    font-weight: bold;
+    padding: 10px 0px 10px 40px;
+    border-bottom: 2px solid #2b6695;
+    border-left: 10px solid #2b6695;
+}
+.title img{
+    position: absolute;
+    width: 30px;
+    top: 12px;
+    left: 3px;
+}
+.article .content{
+    width: 98%;
+    margin: 0 auto;
+}
+.other{
+    padding: 5px 0px;
+    position: relative;
+    width: 98%;
+    margin-left: 1%;
+    border-top: 1.5px solid gray;
+    color: gray;
+    font-size: 18px;
+}
+.other a{
+    margin-left: 23px;
+    text-decoration: none;
+    color: #2b6695;
+}
+.other a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+.other img{
+    width: 22px;
+    position: absolute;
+    top: 6px;
+}
+.other span a{
+    position: relative;
+}
+#like-img{
+    width: 22px;
+    position: absolute;
+    left: -23px;
+    top: 1px;
+}
+.article_info{
+    width: 100%;
+    text-align: right;
+    color: gray;
+    padding: 3px 0px;
+}
+.article_info a{
+    text-decoration: none;
+    color: blue;
+}
+.article_info a:hover{
+    text-decoration: underline;
+    color: #2c3e50;
+}
+.time{
+    float: right;
+    font-size: 14px;
+    color: #2c3e50;
+}
+.comments{
+    padding-bottom: 20px;
+}
+.comment-title{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-left: 1%;
+    width: 98%;
+    display: block;
+    border-bottom: 1px solid black;
+}
+#comments-ul{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+#comments-ul li{
+    list-style: none;
+}
+.comment{
+    border: 1px solid gray;
+    margin: 10px 0px;
+    background: #fff;
+}
+.comment a{
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+}
+.comment a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.comment p:nth-child(1){
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+.comment p:nth-child(2){
+    padding: 0px 25px 15px;
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 2;
+    font-family: '微软雅黑';
+}
+.add-comment{
+    width: 98%;
+    margin-left: 1%;
+}
+.add-comment textarea{
+    margin: 10px 0px;
+    width: 50%;
+    padding: 2px;
+    height: 300px;
+    font-family: '微软雅黑';
+    display: block;
+}
+.add-comment button{
+    width: 8%;
+}
+.add-comment a{
+    text-decoration: none;
+    color: #2c3e50;
+    margin-left: 20px;
+}
+.add-comment a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.color-span{
+    color: orange;
+}
+/*隐藏信息*/
+#info-space{
+    display: none;
+}
+#like_status{
+    display: none;
+}
+/*返回顶部开始*/
+#return-top{
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    padding: 5px;
+    border-radius: 50%;
+}
+#return-top img{
+    width: 50px;
+}
+/*返回顶部结束*/

@@ -1,0 +1,96 @@
+body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea,select{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../images/my_page.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+.nav-div{
+    background: #3d97cb;
+    width: 70%;
+    margin: 100px auto 0px;
+    height: 40px;
+    color: white;
+}
+.nav-div ul li{
+    list-style: none;
+    float: left;
+    font-size: 18px;
+    margin: 0px 10px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.nav-div ul li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-div ul li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.main{
+    background: #f7fbfd;
+    width: 70%;
+    margin: 0 auto;
+}
+.main p{
+    font-weight: 600;
+    margin: 20px 20px 0px;
+    padding-top: 10px;
+}
+#articles-table{
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#articles-table tr th:nth-child(2),#articles-table tr th:nth-child(3),#articles-table tr th:nth-child(4),#articles-table tr th:nth-child(6),#articles-table tr th:nth-child(7){
+    width: 10%;
+}
+#articles-table tr th:nth-child(1){
+    width: 30%;
+    text-align: left;
+    padding-left: 10px;
+}
+#articles-table tr th:nth-child(5){
+    width: 20%;
+}
+#articles-table tr td:nth-child(1){
+    padding-top: 10px;
+}
+#articles-table tr:nth-child(2n){
+    background: #ecf0f1;
+}
+#articles-table tr td{
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 13px;
+}
+#articles-table tr td a{
+    text-decoration: none;
+    color: blue;
+}
+#articles-table tr td a:hover{
+    text-decoration: underline;
+    color: red;
+}
+#articles-table tr td:nth-child(1){
+    text-align: left;
+    padding-left: 10px;
+}
+#current{
+    color: #fa8231;
+}
+#pageNum,#pageNow{
+    display: none;
+}
+/*分页按钮*/
+.page-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 80px auto 20px;
+    text-align: center;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.pagination.css" />
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="js/jquery.pagination.min.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-family: "微软雅黑";
+				background: #eee;
+			}
+			
+			button {
+				display: inline-block;
+				padding: 6px 12px;
+				font-weight: 400;
+				line-height: 1.42857143;
+				text-align: center;
+				vertical-align: middle;
+				cursor: pointer;
+				border: 1px solid transparent;
+				border-radius: 4px;
+				border-color: #28a4c9;
+				color: #fff;
+				background-color: #5bc0de;
+				margin: 20px 20px 0 0;
+			}
+			
+			.box {
+				width: 800px;
+				margin: 100px auto 0;
+				height: 34px;
+			}
+			
+			.page {
+				width: 600px;
+			}
+			
+			.info {
+				width: 200px;
+				height: 34px;
+				line-height: 34px;
+			}
+			
+			.fl {
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div id="pagination3" class="page fl"></div>
+			<div class="info fl">
+				<p>当前页数：<span id="current3">4</span></p>
+			</div>
+			<button id="getPage">getPage</button>
+			<button id="setPage">setPage</button>
+		</div>
+
+		<script>
+			$(function() {
+				$("#pagination3").pagination({
+					//当前页数
+					currentPage: 4,
+					//总页数
+					totalPage: 16,
+					isShow: true,
+					count: 5,
+					homePageText: "首页",
+					endPageText: "尾页",
+					prevPageText: "上一页",
+					nextPageText: "下一页",
+					callback: function(current) {
+						$("#current3").text(current)
+					}
+				});
+
+				$("#getPage").on("click", function() {
+					var info = $("#pagination3").pagination("getPage");
+					alert("当前页数：" + info.current + ",总页数：" + info.total);
+				});
+
+				$("#setPage").on("click", function() {
+					$("#pagination3").pagination("setPage", 1, 10);
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,10 @@
+.simpleAlert{position: fixed;z-index: 1000;}
+.simpleAlertShelter{position: fixed;width: 100%;height: 100%;top:0;left:0;background-color: #000;opacity: 0.3;filter:alpha(opacity=30);}
+.simpleAlertBody{position:fixed;display: none;width: 376px;height: 216px;top:50%;left:50%;margin:-188px 0 0 -238px;opacity:0;border: 1px solid #7ed6df;background-color: #fff;}
+.simpleAlertBodyClose{position: absolute;width: 14px;height: 14px;top:4px;right: 8px;padding: 5px;cursor: pointer;z-index: 9;color: #fff;font-size: 18px;}
+.simpleAlertBodyTitle{position: absolute;top:0;width:100%;height:48px;line-height:48px;overflow-y:auto;left: 0;background-color: #22a6b3;text-align: center;font-size: 18px;color: #fff;}
+.simpleAlertBodyContent{position: absolute;top:40%;width:96%;height:48px;overflow-y:auto;left: 2%;text-align: center;font-size: 18px;font-weight: 600;color: #333;}
+.simpleAlertBtn{position:absolute;width: 80px;height: 30px;bottom:10%;border: 1px solid #bfbfbf;cursor:pointer;border-radius: 5px;color: #fff;font-size: 16px;}
+.simpleAlertBtn1{background-color: #22a6b3;left: 25%;}
+.simpleAlertBtn2{background-color: #f7f7f7;color: #333;right: 25%;}
+.onlyOne{width: 200px;height: 36px;left: 138px;}

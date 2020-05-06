@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*导航栏*/
+#nav-box{
+    width: 90%;
+    height: 60px;
+    background: #2b6695;
+    margin: 10px 1.5% 0px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.5), 0 0 0 1px #636e72;
+}
+.logo-title{
+    position: relative;
+    height: 30px;
+}
+.logo-title span{
+    position: absolute;
+    top: 10px;
+    left: 1%;
+    font-size: 14px;
+    color: #fff;
+}
+#menu{
+    margin-left: 20px;
+}
+#menu li{
+    float: left;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    list-style: none;
+    transition: 0.7s all;
+}
+#menu li:hover{
+}
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+    padding: 14px 30px;
+}
+#menu li a:before{
+    content: '';
+    width: 50%;
+    position: absolute;
+    border-bottom: 2px solid #fff;
+    bottom: 0;
+    right: 350px;
+    transition: 0.5s all;
+}
+#menu li a:hover:before {
+    right: 25%;
+    color: #dfe6e9;
+}
+.menu-title{
+    position: relative;
+}
+.menu-title img{
+    position: absolute;
+    width: 25px;
+    left: 45px;
+    top: 13px;
+}
+/*导航栏结束*/
+/*用户任务栏开始*/
+.sidebar{
+    position: fixed;
+    width: 120px;
+    height: 500px;
+    margin-top: 20px;
+    right: -70px;
+    overflow: hidden;
+    transition: 0.8s all;
+    z-index: 1;
+}
+.sidebar ul{
+    width: 68px;
+    border-radius: 10px;
+    background: #d35400;
+    overflow: hidden;
+}
+.side{
+    right: 0;
+}
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+}
+.sidebar ul li{
+    list-style: none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: white;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 80px;
+    display: block;
+    transition: 0.6s all;
+}
+.sidebar ul li:nth-child(1) a img{
+    width: 40px;
+}
+.sidebar ul li a img:first-child{
+    padding-top: 20px;
+}
+.btn{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+}
+#list_status{
+    display: none;
+}
+.list-icon img{
+    width: 30px;
+    margin-left: 5px;
+    line-height: 80px;
+}
+/*用户任务栏结束*/
